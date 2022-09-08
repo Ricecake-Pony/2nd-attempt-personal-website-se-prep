@@ -2,19 +2,51 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script> 
     <title>My Personal Website</title>
   </head>
 
   <body>
-    <h1>Hello World!</h1>
-    <script src="script.js"></script>
+    <body>
+        <h1>The Journey Begins!</h1>
+
+        <!-- This is for the Tabs project portion! -->
+    
+        <title>Tabs</title>
+        <ul class="tabs">
+            <li data-tab-target="#About" class="active tab">About</li>
+            <li data-tab-target="#Vision" class="tab">Vision</li>
+            <li data-tab-target="#Goals" class="tab">Goals</li>
+        </ul>
+    
+        <div class="tab-content">
+            <div id="About" data-tab-content class="active">
+                <h1>About</h1>
+                <p>Here's where a standard paragraph of text about me would be.</p>
+            </div> <div id="Vision" data-tab-content>
+                <h1>Vision</h1>
+                <p>To help others through the utilization of my skills to the upmost competence.</p>
+            </div> <div id="Goals" data-tab-content>
+                <h1>Goals</h1>
+                <p>To be a confident programmer by the end of the program!</p>
+            </div>
+        </div>
+       
+            <article class="about-img">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIL3WSIp_gcv1pDSlDG0rUzABbKB8w-2TNxQ&usqp=CAU" alt="Random About Photo">    
+            </article>
+        </div>
+    
+    <!--Color changer hex-colors instead of ROYGBIV-->
 <nav>
     <div class="nav-center">
-    <h2>To change the page color select from the two options below!</h2>
+        <h2>To change the page color select a spectrum and click the button!</h2>
     <ul class="nav-links">
+        <h3> Choose your color spectrum:</h3>
         <li>
             <a href="index.html">ROYGBIV</a>
         </li>
+        <h1>or</h1>
         <li>
             <a href="hex.html">Hex</a>
         </li>
@@ -24,7 +56,7 @@
 <main>
     <div class="container">
         <h3>
-            background color : 
+            Background Color Hex Code : 
             <span class="color">
             #f1f5f8
         </span>
@@ -32,7 +64,21 @@
         <button class="btn btn-hero" id="btn">click me</button>
     </div>
 </main>
-    <p>This is the first paragraph!</p>
     <script src="hex.js"></script>
-  </body>
+<!--Info for Countdown Article-->
+<section class="section-center">
+    <!--Image for countdown-->
+    <article>
+        <img src="data:image/jpeg;base64,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" class="image2" alt="Graduation caps in the air">;
+    </article>
+    <article class="countdown-info">
+    <h3>Countdown Until Graduation</h3>
+    <h4 class="countdown-date">Graduation is on Friday, January 6th, 2023</h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem provident, placeat cumque, veritatis culpa dignissimos qui ducimus deleniti soluta tempora eveniet sit explicabo sapiente aut dolorum, expedita sint? Delectus, nisi.</p>
+        <div id="countdown-timer"></div>
+
+    </article>
+</section>
+
+</body>
 </html>
